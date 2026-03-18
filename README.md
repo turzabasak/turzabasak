@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="banner.svg" alt="TURZA BASAK" width="100%"/>
+<img src="banner.png" alt="TURZA BASAK" width="100%"/>
 
 </div>
 
