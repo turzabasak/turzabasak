@@ -4,7 +4,11 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/turzabasak/turzabasak/main/red-design.png" alt="TURZA BASAK" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/turzabasak/turzabasak/main/red-design-dark.png"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/turzabasak/turzabasak/main/red-design.png"/>
+  <img src="https://raw.githubusercontent.com/turzabasak/turzabasak/main/red-design.png" alt="TURZA BASAK" width="100%"/>
+</picture>
 
 </div>
 
