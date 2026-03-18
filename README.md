@@ -5,18 +5,16 @@
 <div align="center">
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  *  Welcome to Turza's Profile                              │
-│                                                             │
-│  ████████╗██╗   ██╗██████╗ ███████╗ █████╗                 │
-│     ██╔══╝██║   ██║██╔══██╗╚════██║██╔══██╗                │
-│     ██║   ██║   ██║██████╔╝    ██╔╝███████║                │
-│     ██║   ██║   ██║██╔══██╗   ██╔╝ ██╔══██║                │
-│     ██║   ╚██████╔╝██║  ██║   ██║  ██║  ██║                │
-│     ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝  ╚═╝  ╚═╝               │
-│                                                             │
-│  Press  Enter  to continue                                  │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│  *  Welcome to Turza's Profile                                   │
+│                                                                  │
+│  ████████ ██  ██ ██████  ███████  █████                          │
+│     ██    ██  ██ ██   ██    ██   ██   ██                         │
+│     ██    ██  ██ ██████     ██   ███████                         │
+│     ██    ██  ██ ██   ██  ██     ██   ██                         │
+│     ██     ████  ██   ██ ███████ ██   ██                         │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
@@ -154,9 +152,9 @@ Stack       : Python, scikit-learn, pandas, NumPy
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=turzabasak&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E8855A&icon_color=E8855A&text_color=c9d1d9)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=turzabasak&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=FA6969&icon_color=FA6969&text_color=c9d1d9)
 &nbsp;&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=turzabasak&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E8855A&text_color=c9d1d9)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=turzabasak&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=FA6969&text_color=c9d1d9)
 
 </div>
 
@@ -189,6 +187,6 @@ Stack       : Python, scikit-learn, pandas, NumPy
 └──────────────────────────────────────────┘
 ```
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=turzabasak.turzabasak&left_color=grey&right_color=E8855A)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=turzabasak.turzabasak&left_color=grey&right_color=FA6969)
 
 </div>
