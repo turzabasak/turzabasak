@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="red-design.png" alt="TURZA BASAK" width="100%"/>
+<img src="https://raw.githubusercontent.com/turzabasak/turzabasak/main/red-design.png" alt="TURZA BASAK" width="100%"/>
 
 </div>
 
