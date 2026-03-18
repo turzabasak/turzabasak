@@ -1,13 +1,12 @@
 from PIL import Image, ImageDraw
 
-# Settings
-block  = 22   # size of each pixel block
-gap    = 4    # dark gap between blocks
+# Settings — matches design.png style
+block  = 36    # size of each pixel block
+gap    = 5     # transparent gap between blocks
 cell   = block + gap
-color  = (250, 105, 105)   # #FA6969
-dark   = (22,  27,  34)    # #161b22  (inner groove)
-bg     = (13,  17,  23)    # #0d1117  (background)
-pad    = 40   # outer padding
+color  = (232, 123, 76)    # warm orange (matches design.png)
+outline = (80, 40, 20)     # dark brown inner outline
+pad    = 50    # outer padding
 
 font = {
     "T": ["11111","00100","00100","00100","00100","00100","00100"],
@@ -24,23 +23,25 @@ font = {
 line1 = "TURZA"
 line2 = "BASAK"
 
-cols  = max(len(line1), len(line2))
-rows  = 7   # font height in pixels
+cols = max(len(line1), len(line2))
+rows = 7
 
 img_w = pad * 2 + cols * 5 * cell + (cols - 1) * cell
-img_h = pad * 2 + rows * cell * 2 + cell * 2   # 2 rows + row gap
+img_h = pad * 2 + rows * cell * 2 + cell * 2
 
-img  = Image.new("RGB", (img_w, img_h), bg)
+# RGBA — transparent background works on any GitHub theme
+img  = Image.new("RGBA", (img_w, img_h), (0, 0, 0, 0))
 draw = ImageDraw.Draw(img)
 
 def draw_block(x0, y0):
-    """Draw one pixel block: outer coral → dark groove → inner coral."""
-    # Outer fill
-    draw.rectangle([x0, y0, x0 + block, y0 + block], fill=color)
-    # Dark inner ring (inset 2px)
-    draw.rectangle([x0 + 2, y0 + 2, x0 + block - 2, y0 + block - 2], fill=dark)
-    # Inner coral fill (inset 4px)
-    draw.rectangle([x0 + 4, y0 + 4, x0 + block - 4, y0 + block - 4], fill=color)
+    """Matches design.png: solid fill + two concentric dark outlines inside."""
+    b = block
+    # Solid orange fill
+    draw.rectangle([x0, y0, x0+b-1, y0+b-1], fill=color)
+    # First inner outline (inset 3px)
+    draw.rectangle([x0+3, y0+3, x0+b-4, y0+b-4], outline=outline, width=1)
+    # Second inner outline (inset 6px)
+    draw.rectangle([x0+6, y0+6, x0+b-7, y0+b-7], outline=outline, width=1)
 
 def draw_word(word, row_y):
     total_w = len(word) * 5 * cell + (len(word) - 1) * cell
@@ -51,10 +52,8 @@ def draw_word(word, row_y):
         for r, row in enumerate(pattern):
             for c, val in enumerate(row):
                 if val == "1":
-                    bx = x_offset + c * cell
-                    by = row_y  + r * cell
-                    draw_block(bx, by)
-        x_offset += 5 * cell + cell   # letter width + 1-cell gap
+                    draw_block(x_offset + c * cell, row_y + r * cell)
+        x_offset += 5 * cell + cell
 
 draw_word(line1, pad)
 draw_word(line2, pad + rows * cell + cell * 2)
